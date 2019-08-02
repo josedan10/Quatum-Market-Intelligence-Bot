@@ -1,0 +1,32 @@
+{
+  "name": "quant-market-intelligence-bot",
+  "version": "1.0.0",
+  "description": "Trading bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josedan10/Quatum-Market-Intelligence-Bot.git"
+  },
+  "keywords": [
+    "trading",
+    "bot",
+    "QMI",
+    "express",
+    "node.js",
+    "websockets"
+  ],
+  "author": "Jose Daniel Quintero",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/josedan10/Quatum-Market-Intelligence-Bot/issues"
+  },
+  "homepage": "https://github.com/josedan10/Quatum-Market-Intelligence-Bot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0",
+    "ws": "^7.1.1"
+  }
+}
