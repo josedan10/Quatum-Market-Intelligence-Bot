@@ -29,12 +29,7 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-function calculateSMA (db, period) {  
-
-  // Starts in the 10th position of the array
-  let db_i = period - 1
-
-  console.log(db)
+function calculateSMA (db, period) {
 
   if (db.length >= period) {
     let sum = 0
