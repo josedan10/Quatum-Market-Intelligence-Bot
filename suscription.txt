@@ -1,0 +1,224 @@
+-------------------------
+- Message received
+-
+-
+{"info":"Welcome to the BitMEX Realtime API.","version":"2019-07-30T19:45:52.000Z","timestamp":"2019-08-02T19:16:26.055Z","docs":"https://www.bitmex.com/app/wsAPI","limit":{"remaining":38}}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"success":true,"subscribe":"tradeBin1m:XBTUSD","request":{"op":"subscribe","args":["tradeBin1m:XBTUSD"]}}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"partial","keys":[],"types":{"timestamp":"timestamp","symbol":"symbol","open":"float","high":"float","low":"float","close":"float","trades":"long","volume":"long","vwap":"float","lastSize":"long","turnover":"long","homeNotional":"float","foreignNotional":"float"},"foreignKeys":{"symbol":"instrument"},"attributes":{"timestamp":"sorted","symbol":"grouped"},"filter":{"symbol":"XBTUSD"},"data":[{"timestamp":"2019-08-02T19:16:00.000Z","symbol":"XBTUSD","open":10461,"high":10461.5,"low":10461,"close":10461.5,"trades":151,"volume":258523,"vwap":10461.5,"lastSize":10,"turnover":2471221357,"homeNotional":24.712213570000003,"foreignNotional":258523}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:17:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10461,"close":10461.5,"trades":119,"volume":182777,"vwap":10461.5,"lastSize":10,"turnover":1747165343,"homeNotional":17.471653430000003,"foreignNotional":182777}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:18:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10461,"close":10461.5,"trades":99,"volume":73861,"vwap":10461.5,"lastSize":10,"turnover":706037299,"homeNotional":7.060372989999999,"foreignNotional":73861}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:19:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10461,"close":10461.5,"trades":116,"volume":171934,"vwap":10461.5,"lastSize":10,"turnover":1643517106,"homeNotional":16.435171060000002,"foreignNotional":171934}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:20:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10461,"close":10461.5,"trades":72,"volume":100934,"vwap":10461.5,"lastSize":10,"turnover":964828106,"homeNotional":9.64828106,"foreignNotional":100934}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:21:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10453,"close":10453,"trades":651,"volume":1421607,"vwap":10459.157,"lastSize":1,"turnover":13593338933,"homeNotional":135.93338933,"foreignNotional":1421607}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:22:00.000Z","symbol":"XBTUSD","open":10453,"high":10453.5,"low":10453,"close":10453.5,"trades":104,"volume":263587,"vwap":10453.6902,"lastSize":100,"turnover":2521539217,"homeNotional":25.21539217,"foreignNotional":263587}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:23:00.000Z","symbol":"XBTUSD","open":10453.5,"high":10453.5,"low":10450,"close":10450,"trades":387,"volume":1272566,"vwap":10452.5975,"lastSize":51000,"turnover":12175423274,"homeNotional":121.75423274,"foreignNotional":1272566}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:24:00.000Z","symbol":"XBTUSD","open":10450,"high":10450,"low":10445,"close":10445.5,"trades":446,"volume":1155985,"vwap":10448.229,"lastSize":5700,"turnover":11064687960,"homeNotional":110.64687959999998,"foreignNotional":1155985}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:25:00.000Z","symbol":"XBTUSD","open":10445.5,"high":10446,"low":10432,"close":10432.5,"trades":984,"volume":2900476,"vwap":10439.5031,"lastSize":46,"turnover":27786213559,"homeNotional":277.86213559000004,"foreignNotional":2900476}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:26:00.000Z","symbol":"XBTUSD","open":10432.5,"high":10448,"low":10432.5,"close":10447.5,"trades":463,"volume":871567,"vwap":10441.6832,"lastSize":667,"turnover":8347199635,"homeNotional":83.47199635000001,"foreignNotional":871567}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:27:00.000Z","symbol":"XBTUSD","open":10447.5,"high":10448,"low":10436,"close":10439.5,"trades":493,"volume":1345165,"vwap":10442.7736,"lastSize":1000,"turnover":12881636476,"homeNotional":128.81636476,"foreignNotional":1345165}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:28:00.000Z","symbol":"XBTUSD","open":10439.5,"high":10440,"low":10439,"close":10440,"trades":144,"volume":196966,"vwap":10439.5,"lastSize":5000,"turnover":1886737314,"homeNotional":18.867373139999998,"foreignNotional":196966}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:29:00.000Z","symbol":"XBTUSD","open":10440,"high":10443,"low":10439.5,"close":10442.5,"trades":218,"volume":333333,"vwap":10442.7736,"lastSize":5000,"turnover":3192289746,"homeNotional":31.922897459999994,"foreignNotional":333333}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:30:00.000Z","symbol":"XBTUSD","open":10442.5,"high":10446,"low":10443,"close":10446,"trades":171,"volume":227901,"vwap":10444.9551,"lastSize":25,"turnover":2181971803,"homeNotional":21.81971803,"foreignNotional":227901}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:31:00.000Z","symbol":"XBTUSD","open":10446,"high":10446,"low":10443.5,"close":10444,"trades":293,"volume":971078,"vwap":10444.9551,"lastSize":2,"turnover":9297451167,"homeNotional":92.97451167,"foreignNotional":971078}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:32:00.000Z","symbol":"XBTUSD","open":10444,"high":10443.5,"low":10432,"close":10433,"trades":453,"volume":2536645,"vwap":10436.2346,"lastSize":1100,"turnover":24306866786,"homeNotional":243.06866785999995,"foreignNotional":2536645}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:33:00.000Z","symbol":"XBTUSD","open":10433,"high":10449,"low":10433,"close":10449,"trades":459,"volume":1138050,"vwap":10442.7736,"lastSize":387,"turnover":10899033538,"homeNotional":108.99033538000003,"foreignNotional":1138050}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:34:00.000Z","symbol":"XBTUSD","open":10449,"high":10449.5,"low":10449,"close":10449,"trades":189,"volume":534391,"vwap":10449.5,"lastSize":35,"turnover":5114121870,"homeNotional":51.1412187,"foreignNotional":534391}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:35:00.000Z","symbol":"XBTUSD","open":10449,"high":10449.5,"low":10448.5,"close":10448.5,"trades":136,"volume":343680,"vwap":10449.3208,"lastSize":1,"turnover":3289064161,"homeNotional":32.890641609999996,"foreignNotional":343680}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:36:00.000Z","symbol":"XBTUSD","open":10448.5,"high":10449,"low":10448.5,"close":10448.5,"trades":81,"volume":481460,"vwap":10449.3208,"lastSize":1400,"turnover":4607954470,"homeNotional":46.0795447,"foreignNotional":481460}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:37:00.000Z","symbol":"XBTUSD","open":10448.5,"high":10456,"low":10448.5,"close":10456,"trades":583,"volume":1765361,"vwap":10451.505,"lastSize":26,"turnover":16892547837,"homeNotional":168.92547837000004,"foreignNotional":1765361}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:38:00.000Z","symbol":"XBTUSD","open":10456,"high":10461.5,"low":10455.5,"close":10461,"trades":506,"volume":2823904,"vwap":10456.9696,"lastSize":5000,"turnover":27005474115,"homeNotional":270.05474115000004,"foreignNotional":2823904}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:39:00.000Z","symbol":"XBTUSD","open":10461,"high":10461.5,"low":10461,"close":10461.5,"trades":42,"volume":75657,"vwap":10461.5,"lastSize":3757,"turnover":723205263,"homeNotional":7.232052629999998,"foreignNotional":75657}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:40:00.000Z","symbol":"XBTUSD","open":10461.5,"high":10461.5,"low":10461,"close":10461,"trades":69,"volume":130757,"vwap":10461.5,"lastSize":254,"turnover":1249906163,"homeNotional":12.499061630000003,"foreignNotional":130757}]}-------------------------
+
+
+
+-------------------------
+- Message received
+-
+-
+{"table":"tradeBin1m","action":"insert","data":[{"timestamp":"2019-08-02T19:41:00.000Z","symbol":"XBTUSD","open":10461,"high":10461.5,"low":10461,"close":10461,"trades":92,"volume":168364,"vwap":10461.5,"lastSize":1,"turnover":1609391476,"homeNotional":16.09391476,"foreignNotional":168364}]}-------------------------
+
+
+
