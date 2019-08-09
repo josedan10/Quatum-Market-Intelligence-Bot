@@ -1,1 +1,4 @@
-require('./server.js')
+require('./server')
+const { initClient } = require('./client')
+
+initClient()
