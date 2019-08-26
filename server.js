@@ -32,11 +32,13 @@ function checkSignals () {
   if (SMA_40[1] > SMA_10[1] && SMA_40[0] <= SMA_10[0]) {
     // console.log('Long trade buy signal')
     SIGNAL = 1
+    console.log("NEW SIGNAL: BUY")
   }
 
   if (SMA_40[1] <= SMA_10[1] && SMA_40[0] > SMA_10[0]) {
     // console.log('Close long trade sell signal')
     SIGNAL = -1
+    console.log("NEW SIGNAL: SELL")
   }
 }
 
@@ -51,7 +53,7 @@ function updateDB (evt) {
       case 'insert':
         let { data } = responseData
         let dataTime = moment(data[0].timestamp)
-        let last = db.length ? moment(db[db.length - 1].timestamp) : null
+        let last = db.length ? moment(db[0].timestamp) : null
 
         if (!tempResult) {
           tempResult = {
@@ -69,12 +71,13 @@ function updateDB (evt) {
           if (data[0].low < tempResult.low) tempResult.low = data[0].low
         }
 
-        if (last === null || dataTime.diff(last, 'minutes') === 4) {
+        if (last === null || dataTime.diff(last, 'minutes') === 2) {
       
-          // Diff of 4 minutes
+          // Diff of 2 minutes
           tempResult.timestamp = data[0].timestamp
           tempResult.close = data[0].close
           db.unshift(tempResult)
+          tempResult = null
       
           // Remove the first item
           if (db.length === 101) {
@@ -84,13 +87,13 @@ function updateDB (evt) {
             
           }
 
-          // console.log('SMA(5):')
+          console.log('SMA(5):')
           SMA_10 = calculateSMA(db, 5, SMA_10)
-          // console.log(SMA_10)
+          console.log(SMA_10)
 
-          // console.log('SMA(40):')
-          SMA_40 = calculateSMA(db, 40, SMA_40)
-          // console.log(SMA_40)
+          console.log('SMA(12):')
+          SMA_40 = calculateSMA(db, 12, SMA_40)
+          console.log(SMA_40)
 
           if (SMA_40.length >= 2) {
             checkSignals()
@@ -101,11 +104,11 @@ function updateDB (evt) {
   } else console.log('No action')
 
   // console.log('-----------------------------------------------------------------------')
-  // console.log('My database')
-  // console.log(`Fetched result ${db.length} / 100`)
-  // console.log(db)
-  // console.log('-----------------------------------------------------------------------')
-  // console.log('\n\n')
+  console.log('My database')
+  console.log(`Fetched result ${db.length} / 100`)
+  console.log(db)
+  console.log('-----------------------------------------------------------------------')
+  console.log('\n\n')
 
   // Check signals
 }
@@ -115,9 +118,9 @@ function calculateSMA (db, period, SMAArray) {
   if (db.length >= period) {
     let sum = 0
 
-    for (let SMA_i = db.length - period; SMA_i < db.length; SMA_i++) sum += db[SMA_i].close
+    for (let SMA_i = 0; SMA_i < period; SMA_i++) sum += db[SMA_i].close
 
-    SMAArray.push(sum / period)
+    SMAArray.unshift(sum / period)
   }
 
   return SMAArray
@@ -141,4 +144,9 @@ wsConnection.onmessage = function (evt) {
 wsConnection.onclose = function () {
   // websocket is closed.
   console.log('Connection closed...')
+}
+
+wsConnection.onerror = function (err) {
+  console.error('Socket encountered error: ', err.message, 'Closing socket');
+  wsConnection.close()
 }
